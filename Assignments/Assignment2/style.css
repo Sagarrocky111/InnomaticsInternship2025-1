@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+    
+}
+html, body {
+    overflow-x: hidden; 
+}
+.navbar{
+    position: fixed;
+    color: white;
+    left: 70%;
+    top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex; 
+    gap: 20px;
+    z-index: 1000;
+    /* background-color: aliceblue; */
+
+}
+.navbar a {
+    color: #ffcc00; 
+    text-decoration: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+   
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.nav-toggle{
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.full-screen{
+    background-image: url('c:/Users/raman/Downloads/CoffeShop.image.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    width: auto;
+    color: white;
+    border-top: 100px;
+    border-bottom: 100px;
+    transition: ease-in-out;
+    align-items: center;
+    
+}
+.text-images{
+    text-align: center;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    border-radius: 40%;
+    bottom: 20%;
+   
+}
+
+.Types-of-images{
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    overflow: hidden;
+    padding-bottom: 10%;
+    text-align: center;
+    
+}
+.Types-of-images img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin-bottom: 10px;
+}
+.breakfast{
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    line-gap-override: 10px;
+    left: auto;
+    overflow: hidden;
+
+}
+
+.breakfast img{
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin-bottom: 10px;
+}
+.about-section{
+    text-align: center;
+    border-top: 100px;
+    text-size-adjust: 20px;
+    height: 100vh;
+    width: 100vw;
+}
+.our-menus{
+    width: auto;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.coffee-types{
+    gap: 20px;
+    left: 20px;
+}
+.footer-design{
+    text-align: center;
+    bottom: 0%;
+    position: relative;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.about{
+    text-align: center;
+    text-size-adjust: 50%;
+    height: auto;
+    width: auto;
+    padding: auto;
+    text-decoration-color: #f2f2f2  ;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+
+}
+.about-heading{
+    row-gap: 50px;
+    background-position: top;
+}
+.contact-section{
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: auto;
+    background-color: #f2f2f2   ;
+    padding-top: 5%;
+    padding-bottom: 5%  ;
+
+}
+
+@media(max-width:768px) {
+    .Types-of-images,.breakfast{
+        width: 48%;
+        margin: 1%;
+    }
+}
+@media(max-width:480px) {
+    .Types-of-images,.breakfast{
+        width: 98%;
+        margin: 1%;
+    }
+}
